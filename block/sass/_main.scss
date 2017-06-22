@@ -1,0 +1,44 @@
+$color-tomato: #d04528;
+$color-burgundy: #6B1511;
+$color-gray: #ECEFF1;
+$color-text: #2C3E50; 
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: #fff;
+}
+a, a:hover {
+	text-decoration: none;
+}
+a, tr {
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+input[type="submit"],
+button {
+	cursor: pointer;
+}
+
+.hidden{
+	opacity:0;
+}
+.visible{
+	opacity:1;
+}

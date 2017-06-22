@@ -1,0 +1,65 @@
+$color-text: #3b3b3b;
+$color-blue: #2a97d7;
+$color-green: #a2c037;
+$color-yellow: #eec344;
+$color-purple: #6d5b9f;
+$color-white: #fff;
+$color-gray: #7992a1;
+$color-cherry: #f50e34;
+$color-orange: #ff5806;
+$color-pink: #ff326c;
+$color-aqua: #0acfd1;
+$color-price: #0acfd1;
+
+$font-ptSans: 'PT Sans', sans-serif;
+$font-ptSansNarrow: 'PT Sans Narrow', sans-serif;
+
+html {
+	font-size: 14px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	color: $color-text;
+}
+a, a:hover {
+	text-decoration: none;
+}
+a, tr {
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+a:hover, 
+a:active {
+	color: $color-text;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+input[type="submit"],
+button {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}

@@ -1,0 +1,122 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+	.banner-content {
+		padding-top: 150px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.navbar.fixed {
+		position: relative;
+		top: 0;
+	}
+	.map {
+		background: url('../img/map.jpg') no-repeat 50% 0;
+		height: 245px;
+	}
+	.wr-map {
+		display: none;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.header-top {
+		text-align: center;
+	}
+	.header-callback {
+		float: none;
+	}
+	.header-callback {
+		margin: 20px 0; 
+	}
+	.banner-content .banner-text h1:before {
+		display: none;
+	}
+	.banner-content {
+		padding-top: 100px;
+	}
+	.banner-content .banner-text h1 {
+		padding-bottom: 10px;
+		font-size: 34px;
+	}
+
+	.banner-content .banner-text ul li {
+		padding: 10px 10px 0 10px;
+	}
+	.footer-top {
+		text-align: center;
+	}
+	.catalog .btn-callback, .catalog .form_check p, .banner-form .btn-callback, .banner-form .form_check p{
+		width: 300px;
+	}
+	.min-gallery .preview, .min-gallery .preview img {
+		height: 400px!important;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.problems-item {
+		height: auto;
+	}
+	.problems-btn .btn-callback {
+		font-size: 14px;
+	}
+	.problems-btn {
+		position: relative;
+		bottom: 0;
+		margin-top: 20px;
+	}
+	.map-city {
+		background-position: 35% 0;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+	.explot-item {
+		font-size: 13px;
+		height: 280px;
+	}
+	.map-city h2, .esciz h2, .catolog h2, .banner h2, .problems h2, .explot h2 {
+		font-size: 20px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.wr-map {
+		display: block!important;
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+

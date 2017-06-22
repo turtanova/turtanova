@@ -1,0 +1,47 @@
+@mixin box-shadow($shadow...) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-ms-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+@mixin border-radius($radius...) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($args...) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+@mixin background-size($args...) {
+  -webkit-background-size: $args;
+  -moz-background-size: $args;
+  -o-background-size: $args;
+  background-size: $args;
+}
+
+// @include font-size(14px)
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}

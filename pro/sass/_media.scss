@@ -1,0 +1,133 @@
+
+@media(max-width: 1400px) {
+	div.works-item  {
+		width: 20%;
+		display: none;
+	}
+}
+
+@media(max-width: 1200px) {
+	div.works-item  {
+		width: 25%;
+		display: none;
+	}
+} 
+
+@media(max-width: 998px) {
+	div.works-item  {
+		width: 33.333%;
+		display: none;
+	}
+} 
+
+@media(max-width: 768px) {
+	div.works-item  {
+		width: 50%;
+		display: none;
+	}
+} 
+
+@media(max-width: 480px) {
+	.form-input .input { 
+		float: none; width: 100%; 
+
+		& + .input {
+			margin: 20px 0 0 0;
+		}
+	}
+
+	div .how-item {
+		padding-left: 0;
+		text-align: center;
+
+		.how-item__img {
+			position: static;
+			margin-bottom: 20px;
+			display: inline-block;
+		}
+	}
+}
+
+@media(max-width: 380px) {
+
+}
+
+@media(max-width: 360px) {
+	div.works-item  {
+		width: 100%;
+		display: none;
+	}
+} 
+@media(max-width: 768px) {
+	.header-menu {
+		width: 100%;
+		text-align: center;
+		display: none;
+		position: absolute;
+		top: 40px;
+		padding-top: 20px;
+		left: 0;
+		background: #000;
+		
+		ul li {
+			display: block;
+			margin-bottom: 16px;
+
+			a {
+				margin: 0;
+				padding: 0;
+				letter-spacing: 1px;
+				font-size: 1.4rem;
+
+				&::before { display: none; }
+			}
+		}
+	}
+
+	div.toggle-menu {
+		visibility: visible;
+	}
+
+	div.banner {
+		top: 20%;
+	}
+
+	.banner .banner__title {
+		font-size: 30px;
+
+	}
+}
+
+@media(max-width: 640px) {
+
+	.banner .banner__title {
+		font-size: 24px;
+
+	}
+}
+
+@media(max-width: 800px) and(min-height: 1024px) {
+	div.bg-head {
+		height: 600px;
+	}
+}
+@media(max-width: 667px) and(min-height: 320px) {
+	div.bg-head {
+		height: 400px;
+		background: url('../img/bgm-head-sm.jpg') 50% 50% no-repeat;
+	}
+}
+@media(min-width: 769px) {
+	.header-menu {
+		display: block!important; 
+	}
+
+	header {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 100;
+	}
+}
+

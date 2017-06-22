@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "BadScriptRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("BadScriptRegular/BadScriptRegular.eot?#iefix") format("embedded-opentype"), url("BadScriptRegular/BadScriptRegular.woff") format("woff"), url("BadScriptRegular/BadScriptRegular.ttf") format("truetype"); }
+@font-face {
+  font-family: "CleanvertisingLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("CleanvertisingLight/CleanvertisingLight.eot?#iefix") format("embedded-opentype"), url("CleanvertisingLight/CleanvertisingLight.woff") format("woff"), url("CleanvertisingLight/CleanvertisingLight.ttf") format("truetype"); }
+@font-face {
+  font-family: "RobotoBold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("RobotoBold/RobotoBold.woff") format("woff"), url("RobotoBold/RobotoBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("RobotoRegular/RobotoRegular.woff") format("woff"), url("RobotoRegular/RobotoRegular.ttf") format("truetype"); }

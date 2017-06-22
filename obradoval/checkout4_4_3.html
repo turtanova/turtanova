@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Chekout4_4_3</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/jQueryFormStyler-master/jquery.formstyler.css">
+	<link rel="stylesheet" href="libs/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="libs/slick-1.6.0/slick/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/item.css">
+	<link rel="stylesheet" href="css/media_1.css">
+	<link rel="stylesheet" href="css/basket-right.css">
+	<link rel="stylesheet" href="css/catalog.css">
+	<link rel="stylesheet" href="stylesheets/backet.min.css">
+</head>
+<body>
+	<div class="wrap_header_1">
+		<!-- header_1 -->
+		<div class="header_1 clearfix">
+			<div class="wrap_phone_info">
+				<div class="phone_info">
+					<a href="tel:+74956697799" class="call_info">+7 (495) <em>669-77-99</em></a>
+					<a href="tel:88003335331" class="call_info call-info__border"><em>8-800-333-53-31</em></a> 
+				</div>
+			</div>
+			<a href="#" class="logo_1 left">
+				<span class="logo_text__top">Обрадовал<sup>.ру</sup> <br></span>
+				<span class="logo_mob_text">Корзина</span>
+				<span class="logo_text__bottom">Доставка цветов и подарков</span>
+			</a>
+		</div><!-- END header_1 -->
+	</div>
+	<div class="wrapper_1">
+		<div class="backet_reg">
+			<h2 class="global_title_h2 mobile_hide">Корзина</h2>
+			<div class="backet_cont">
+				<div class="backet_item">
+					<div class="backet_item_wrap">
+						<div class="backet_img_wrap">
+							<div class="backet_img">
+								<img src="img/backet_img/flover_1.jpg" alt=" ">
+							</div>
+							<div class="backet_item_title">
+								<a href="#" class="backet_img_title">Букет «Солнечная ночь»</a>
+								<span class="backet_item_art">Артикул — Б138</span>
+							</div>
+						</div>
+						<div class="backet_edit_show">
+							<div class="backet_edit_price">
+								<span class="amount_1">99 <i>шт.</i></span>
+								<div class="backet_price">
+									<strong class="mob_hide">600</strong>
+									<strong class="mob_show">99 300</strong>
+									<i>руб.</i>
+								</div>
+							</div>
+							<button class="backet_edit_btn clear_btn">Редактировать</button>
+						</div>
+					</div>
+				</div>
+				<div class="backet_item">
+					<div class="backet_item_wrap">
+						<div class="backet_img_wrap">
+							<div class="backet_img">
+								<img src="img/backet_img/ballons.jpg" alt=" ">
+							</div>
+							<div class="backet_item_title">
+								<a href="#" class="backet_img_title">Шар Happy Birthday</a>
+								<span class="backet_item_art">Артикул — Ш035</span>
+							</div>
+						</div>
+						<div class="backet_edit_show">
+							<div class="backet_edit_price">
+								<span class="amount_1">1 <i>шт.</i></span>
+								<div class="backet_price">
+									<strong>30</strong>
+									<i>руб.</i>
+								</div>
+							</div>
+							<button class="backet_edit_btn clear_btn">Редактировать</button>
+						</div>
+					</div>
+				</div>
+				<div class="backet_item backet_case">
+					<div class="backet_plus-btn"></div>
+					<div class="backet_case_head">
+						<div class="case_head_cont">
+							<div class="case_head_tit clearfix">
+								<h3 class="backet_case_tit">Бесплатная открытка</h3>
+								<i class="case_free free_b">Бесплатно</i>
+							</div>
+						</div>
+						<div class="backet_case_edit">
+							<button class="backet_edit_btn clear_btn">Редактировать</button>
+						</div>
+					</div>
+				</div>
+				<div class="backet_item backet_case backet_info_redact active">
+					<div class="backet_item_hide">
+						<div class="backet_plus-btn"></div>
+						<!-- form -->
+						<form action="/">
+							<div class="backet_case_head backet_redact_text">
+								<div class="case_head_cont">
+									<div class="case_head_tit">
+										<h3 class="backet_case_tit">Доставка в пределах МКАД</h3>
+										<i class="case_free free_b">Бесплатно</i>
+									</div>
+								</div>
+								<div class="backet_case_edit backet_case_edit--save">
+									<button class="backet_edit_btn--save orange_btn mobile_hide">Сохранить</button>
+									<div class="backet_edit_close mobile_hide"></div>
+								</div>
+							</div>
+							<div class="backet_case_content clearfix">
+								<div class="form_redact clearfix">
+									<div class="form_redact_type">
+										<h2 class="global_title_h2">Тип доставки</h2>
+										<div class="checked_interval">
+											<div class="checked_interval_item">
+												<input type="radio" id="input_checkbox_a" name="radio" value="" class="input_radio" checked>
+												<label for="input_checkbox_a" class="label_checked label_checked__help">Доставка в интервале 4-х часов</label>
+											</div>
+											<div class="checked_interval_item">
+												<input type="radio" id="input_checkbox_b" name="radio" value="" class="input_radio">
+												<label for="input_checkbox_b" class="label_checked label_checked__help">Доставка в интервале 3-х часов (500 р.)</label>
+											</div>
+											<div class="checked_interval_item">
+												<input type="radio" id="input_checkbox_c" name="radio" value="" class="input_radio">
+												<label for="input_checkbox_c" class="label_checked label_checked__help">Доставка в интервале 2-х часов (1000 р.)</label>
+											</div>
+											<div class="checked_interval_item">
+												<input type="radio" id="input_checkbox_d" name="radio" value="" class="input_radio">
+												<label for="input_checkbox_d" class="label_checked label_checked__help">Доставка в пределах часа (1500 р.)</label>
+											</div>
+											<div class="checked_interval_item">
+												<input type="radio" id="input_checkbox_f" name="radio" value="" class="input_radio">
+												<label for="input_checkbox_f" class="label_checked label_checked__help">Доставка в точное время (2000 р.)</label>
+											</div>
+											<div class="checked_interval_item">
+												<input type="radio" id="input_checkbox_g" name="radio" value="" class="input_radio">
+												<label for="input_checkbox_g" class="label_checked label_checked__help">Самовывоз из салона цветов</label>
+											</div>
+										</div>
+										<div class="checked_interval_item checked_outwards">
+											<input type="checkbox" id="input_checkbox_out" name="checkbox" value="" class="input_checkbox" checked>
+											<label for="input_checkbox_out" class="label_checked label_checked__help">Доставка за пределы МКАД</label>
+										</div>
+										<div class="form_select_style select_addr_1">
+											<select class="gray_select_style select_width_1" data-placeholder="Бронницы (42км) - 2940 руб.">
+												<option></option>
+												<option value="">Бронницы (42км)</option>
+												<option value="">Бронницы (42км) - 29 руб.</option>
+												<option value="">Бронницы (42км) - 294 руб.</option>
+												<option value="">Бронницы (42км) - 240 руб.</option>
+											</select>
+										</div>
+										<h2 class="global_title_h2">Дата и время доставки</h2>
+										<div class="select_date_deliv">
+											<label class="label_datepicker">
+												Дата доставки:
+												<input type="text" placeholder="" id="datepicker" readonly class="datepicker">	
+											</label>
+										</div>
+										<div class="form_select_style select_time_1">
+											<label class="label_item">Время доставки:</label>
+											<select class="gray_select_style select_width_1" data-placeholder=" " >
+												<option></option>
+												<option value="" selected>16:00 - 18:00</option>
+												<option value="">18:00 - 20:00</option>
+												<option value="">20:00 - 22:00</option>
+											</select>
+										</div>
+										<div class="checked_interval_item checked_remind">
+											<input type="checkbox" id="input_checkbox_remind" name="checkbox" value="" class="input_checkbox" checked>
+											<label for="input_checkbox_remind" class="label_checked label_checked__help">Напомнить мне об этой дате через год</label>
+										</div>
+									</div>
+									<div class="form_redact_date">
+										<h2 class="global_title_h2">Данные получателя</h2>
+										<div class="recipient_data">
+											<div class="checked_interval_item checked_get">
+												<input type="checkbox" id="input_checkbox_get" name="checkbox" value="" class="input_checkbox">
+												<label for="input_checkbox_get" class="label_checked label_checked__help">Получаю сам</label>
+											</div>
+											<div class="form_redact_info clearfix">
+												<a href="#" class="green_btn show_popup">Ваши контакты</a>
+												<i>Вы можете выбрать данные получателя, которому заказывали цветы или подарки ранее</i>
+											</div>
+											<div class="wrap_input_info wrap_input_info--name">
+												<label for="name" class="label_item">Имя, Фамилия:</label>
+												<input type="text" class="input_text input_text_name" id="name">
+											</div>
+											<div class="wrap_input_info wrap_input_info--tel">
+												<label for="tel" class="label_item">Тел:</label>
+												<input type="text" class="input_text input_text_tel" id="tel">
+											</div>
+											<div class="checked_interval_item checked_location">
+												<input type="checkbox" id="input_checkbox_loc" name="checkbox" value="" class="input_checkbox">
+												<label for="input_checkbox_loc" class="label_checked label_checked__help">Узнать адрес доставки, созвонившись с получателем</label>
+											</div>
+											<div class="inputs_wrap clearfix">
+												<div class="form_select_style select_add_1">
+													<label class="label_item">Тип адреса:</label>
+													<select class="gray_select_style select_work" data-placeholder=" ">
+														<option></option>
+														<option value="" selected>Рабочий 1</option>
+														<option value="">Рабочий 2</option>
+														<option value="">Рабочий 3</option>
+													</select>
+												</div>
+												<div class="wrap_input_item--comp">
+													<label for="comp" class="label_item">Компания:</label>
+													<input type="text" class="input_text input_text_comp" id="comp">
+												</div>
+											</div>
+											<div class="inputs_wrap clearfix">
+												<div class="city_static">
+													<span class="city_text">Город:</span>
+													<span class="city_name">Москва</span>
+												</div>
+												<div class="wrap_input_item wrap_input_item--str">
+													<label for="str" class="label_item">Улица:</label>
+													<input type="text" class="input_text input_text_str" id="str">
+												</div>
+												<div class="wrap_input_item wrap_input_item--house">
+													<label for="house" class="label_item">Дом №:</label>
+													<input type="text" class="input_text input_text_house" id="house">
+												</div>
+												<div class="wrap_input_item wrap_input_item--struct">
+													<label for="struct" class="label_item">Строение:</label>
+													<input type="text" class="input_text input_text_struct" id="struct">
+												</div>
+												<div class="wrap_input_item wrap_input_item--corp">
+													<label for="corp" class="label_item">Корпус:</label>
+													<input type="text" class="input_text input_text_corp" id="corp">
+												</div>
+												<div class="wrap_input_item wrap_input_item--entr">
+													<label for="entr" class="label_item">Подъезд:</label>
+													<input type="text" class="input_text input_text_entr" id="entr">
+												</div>
+												<div class="wrap_input_item wrap_input_item--office">
+													<label for="office" class="label_item">Офис:</label>
+													<input type="text" class="input_text input_text_office" id="office">
+												</div>
+												<div class="wrap_input_item wrap_input_item--intercom">
+													<label for="intercom" class="label_item">Домофон:</label>
+													<input type="text" class="input_text input_text_intercom" id="intercom">
+												</div>
+											</div>
+											<div class="wrap_input_item--comments">
+												<label for="comments" class="label_item">Комментарий:</label>
+												<input type="text" class="input_text input_text_comments" id="comments">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="orange_btn global_btn mobile_show">Сохранить изменения</button>
+						</form>
+						<!-- End form -->
+					</div>
+				</div>
+				<!-- END REDACT CARD -->
+			</div>
+		</div>
+	</div>
+	<div class="attention">
+		<p class="attention_tit">Сумма товаров меньше 1500 <i>руб.</i></p>
+		<p>Чтобы воспользоваться самовывозом позвоните к нам в офис:</p>
+		<p>Москва: <a href="tel:+74956697799"><strong>+7&nbsp;(495)&nbsp;6697799</strong></a>; Россия: <a href="tel:88003335331"><strong>8&nbsp;(800)&nbsp;3335331</strong></a>; e-mail: <a href="mailto:office@obradoval.ru" class="mailto">office@obradoval.ru</a></p>
+	</div>
+	<div class="bonus">
+		<div class="wrapper_1">
+			<div class="bonus_num">
+				<span class="bonus_text">У вас <strong>10560 </strong><span class="green">бонусов</span> из них использовалось <strong>3050</strong></span>
+				<button class="backet_edit_btn clear_btn">Редактировать</button>
+			</div>
+			<div class="bonus_total mobile_hide">
+				<span class="total">Итого: </span> 
+				<span class="backet_price">
+					<strong>99630</strong>
+					<i>руб. <span class="gray">с учетом бонусов</span></i>
+				</span>
+			</div>
+			<div class="bonus_total mobile_show">
+				<span class="total">Итого к оплате с учетом бонусов:</span>
+				<span class="backet_price">
+					<strong class="bg_strong">120 000</strong><i> руб.</i>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper_1">
+	<!-- Payment -->
+		<div class="payment">
+			<h2 class="global_title_h2">Способ оплаты</h2>
+		<!-- FORM -->
+			<form  class="form_pay clearfix">
+				<div class="form_pay_money form_select_style ">
+					<p class="form_descr mobile_hide">Мы принимаем пластиковые карты, наличные, электронные деньги и оплату через телефон и терминалы</p>
+					<div class="item_checked_wrap">
+						<div class="item_checked">
+							<input type="radio" id="input_radio_1" name="radio" value="" class="input_radio" checked>
+							<label for="input_radio_1" class="label_checked label_checked__help">Картой VISA, MasterCard </label>
+							<img src="img/backet_img/visa_mb.jpg" alt=" ">
+						</div>
+						<div class="item_checked">
+							<input type="radio" id="input_radio_2" name="radio" value="" class="input_radio">
+							<label for="input_radio_2" class="label_checked label_checked__help">Картой Diners Club, American Express</label>
+							<img src="img/backet_img/diners_mb.jpg" alt=" ">
+						</div>
+						<div class="item_checked">
+							<input type="radio" id="input_radio_3" name="radio" value="" class="input_radio">
+							<label for="input_radio_3" class="label_checked label_checked__help">Евросеть, Связной</label>
+							<img src="img/backet_img/evros_mb.jpg" alt=" ">
+						</div>
+						<div class="item_checked">
+							<input type="radio" id="input_radio_4" name="radio" value="" class="input_radio">
+							<label for="input_radio_4" class="label_checked label_checked__help">Терминал КИВИ</label>
+							<img src="img/backet_img/qiwi_mb.jpg" alt=" ">
+						</div>
+						<div class="item_checked">
+							<input type="radio" id="input_radio_5" name="radio" value="" class="input_radio">
+							<label for="input_radio_5" class="label_checked label_checked__help">PayPal</label>
+							<img src="img/backet_img/pay_mb.jpg" alt=" ">
+						</div>
+						<div class="item_checked">
+							<input type="radio" id="input_radio_6" name="radio" value="" class="input_radio">
+							<label for="input_radio_6" class="label_checked label_checked__help">Наличными при получении</label>
+							<img src="img/backet_img/cash_mb.jpg" alt=" ">
+						</div>
+					</div>
+					<select class="gray_select_style select_width_2" data-placeholder="Выбрать другой способ оплаты">
+						<option></option>
+						<option value="">Способ оплаты 1</option>
+						<option value="">Способ оплаты 2</option>
+						<option value="">Способ оплаты 3</option>
+						<option value="">Способ оплаты 4</option>
+					</select>
+				</div>
+				<div class="form_pay_bonus form_select_style ">
+					<p class="form_descr">Если у вас есть бонусы, промокод, сертификат или карта дисконтной системы, воспользуйтесь ими:</p>
+					<div class="input_item_wrap">
+						<div class="input_item">
+							<select class="gray_select_style select_width_1" data-placeholder="Дисконтная система">
+								<option></option>
+								<option value="">Дисконтная система</option>
+								<option value="">Дисконтная система 1</option>
+								<option value="">Дисконтная система 2</option>
+								<option value="">Дисконтная система 3</option>
+								<option value="">Дисконтная система 4</option>
+							</select>
+						</div>
+						<div class="input_item">
+							<select class="gray_select_style select_width_1" data-placeholder="«Связной-Клуб»">
+								<option></option>
+								<option value="">Связной клуб</option>
+								<option value="">Связной клуб 1</option>
+								<option value="">Связной клуб 2</option>
+								<option value="">Связной клуб 3</option>
+								<option value="">Связной клуб 4</option>
+							</select>
+						</div>
+						<div class="input_item">
+							<label for="card" class="label_item">Номер карты:</label>
+							<input type="text"  class="input_text input_text_width-lg" maxlength="23" id="card">
+						</div>
+					</div>
+					<div class="hr_line mobile_show"></div>
+					<div class="good_check good_check--checked green mobile_hide">Пройдена успешно</div>
+					<div class="conditions_1 mobile_show">
+						<input type="checkbox" id="input_checkbox_1" name="checkbox" value="" class="input_checkbox" checked>
+						<label for="input_checkbox_1" class="label_checked label_checked__help">С <b class="green">условиями заказа</b> согласен</label>
+					</div>
+				</div>
+			</form>
+		<!-- END FORM -->
+		</div>
+	<!-- End Payment -->
+	</div>
+	<div class="next_deliver_wrap">
+		<div class="wrapper_1">
+			<div class="next_deliver next_deliver_1">
+				<div class="deliv_info mobile_hide">
+					<span class="deliv_date">Ближайшая доставка вашего заказа <br> возможна <b class="bold">07.07.2014</b></span>
+					<span class="deliv_sum">
+					Итого к оплате:<br>
+					<strong class="strong">630 <i class="rub">руб. </i></strong><i class="gray">с учетом бонусов</i>
+				</span>
+				</div>
+				<div class="bonus_total mobile_show">
+					<span class="total">Итого к оплате с учетом бонусов:</span>
+					<span class="backet_price">
+						<strong class="bg_strong">120 000</strong><i> руб.</i>
+					</span>
+				</div>
+				<div class="send_payment">
+					<button class="bg_btn orange_btn">Продолжить</button>
+				</div>
+				<div class="deliv_info mobile_show">
+					<span class="deliv_date">Ближайшая доставка вашего заказа возможна <br><b class="bold">07.07.2014</b></span>
+				</span>
+			</div>
+		</div>
+	</div>
+	<!-- POP UP -->
+	<div class="pop_up"></div>
+	<div class="wrap_main_content">
+		<div class="close_btn"></div>
+		<div class="wrap_main_list">
+			<h2 class="global_title_h2">Ваши контакты:</h2>
+			<ul class="main_list">
+				<li class="main_info active">
+					<div class="main_info_text">
+						<p class="main_info__name">Кириенко Владимир</p>
+						<p class="main_info__tel">+380501699296</p>
+					</div>
+					<!-- sub_list -->
+					<ul class="sup_list">
+						<div class="sub_top_text">
+							<p class="sub_name">Кириенко Владимир</p>
+							<p>+380501699296</p>
+						</div>
+						<p class="global_title_h2 sub_text_mob">Выберите адрес:</p>
+						<div class="sub_scroll">
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий 2</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Домашний</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Дополнительный</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+						</div>
+					</ul>
+					<!-- END sub_list -->
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">Мегадлиннаяфамилия или имя</p>
+						<p class="main_info__tel">+380501699296</p>
+					</div>
+					<!-- sub_list -->
+					<ul class="sup_list">
+						<div class="sub_top_text">
+							<p class="sub_name">Мегадлиннаяфамилия или имя</p>
+							<p>+380501699296</p>
+						</div>
+						<p class="global_title_h2 sub_text_mob">Выберите адрес:</p>
+						<div class="sub_scroll">
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий 2</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+						</div>
+					</ul>
+					<!-- END sub_list -->
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">Пугачева Алла</p>
+						<p class="main_info__tel">+79165093234, +79163462338</p>
+					</div>
+					<!-- sub_list -->
+					<ul class="sup_list">
+						<div class="sub_top_text">
+							<p class="sub_name">Пугачева Алла</p>
+							<p>+79165093234, +79163462338</p>
+						</div>
+						<p class="global_title_h2 sub_text_mob">Выберите адрес:</p>
+						<div class="sub_scroll">
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий 2</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Домашний</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Дополнительный</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+						</div>
+					</ul>
+					<!-- END sub_list -->
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">Киркоров Филипп</p>
+						<p class="main_info__tel">+79165093234</p>
+					</div>
+					<!-- sub_list -->
+					<ul class="sup_list">
+						<div class="sub_top_text">
+							<p class="sub_name">Киркоров Филипп</p>
+							<p>+79165093234</p>
+						</div>
+						<p class="global_title_h2 sub_text_mob">Выберите адрес:</p>
+						<div class="sub_scroll">
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий 2</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Домашний</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+						</div>
+					</ul>
+					<!-- END sub_list -->
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">Семенченко Иван</p>
+						<p class="main_info__tel">+79165093234</p>
+					</div>
+					<!-- sub_list -->
+					<ul class="sup_list">
+						<div class="sub_top_text">
+							<p class="sub_name">Семенченко Иван</p>
+							<p>+79165093234</p>
+						</div>
+						<p class="global_title_h2 sub_text_mob">Выберите адрес:</p>
+						<div class="sub_scroll">
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Домашний</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Дополнительный</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+						</div>
+					</ul>
+					<!-- END sub_list -->
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">Рязанов Эльдар</p>
+						<p class="main_info__tel">+79165093234</p>
+					</div>
+					<!-- sub_list -->
+					<ul class="sup_list">
+						<div class="sub_top_text">
+							<p class="sub_name">Рязанов Эльдар</p>
+							<p>+79165093234</p>
+						</div>
+						<p class="global_title_h2 sub_text_mob">Выберите адрес:</p>
+						<div class="sub_scroll">
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий 2</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Домашний</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Дополнительный</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Дополнительный_2</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+						</div>
+					</ul>
+					<!-- END sub_list -->
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">Фрейндлихт Алиса</p>
+						<p class="main_info__tel">+79165093234</p>
+					</div>
+					<!-- sub_list -->
+					<ul class="sup_list">
+						<div class="sub_top_text">
+							<p class="sub_name">Фрейндлихт Алиса</p>
+							<p>+79165093234</p>
+						</div>
+						<p class="global_title_h2 sub_text_mob">Выберите адрес:</p>
+						<div class="sub_scroll">
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий 2</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Домашний</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Дополнительный</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+						</div>
+					</ul>
+					<!-- END sub_list -->
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">Шустерман Софья</p>
+						<p class="main_info__tel">+79165093234</p>
+					</div>
+					<!-- sub_list -->
+					<ul class="sup_list">
+						<div class="sub_top_text">
+							<p class="sub_name">Шустерман Софья</p>
+							<p>+79165093234</p>
+						</div>
+						<p class="global_title_h2 sub_text_mob">Выберите адрес:</p>
+						<div class="sub_scroll">
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий 2</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Домашний</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Дополнительный</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+						</div>
+					</ul>
+					<!-- END sub_list -->
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">Шустерман Геннадий</p>
+						<p class="main_info__tel">+79165093234</p>
+					</div>
+					<!-- sub_list -->
+					<ul class="sup_list">
+						<div class="sub_top_text">
+							<p class="sub_name">Шустерман Геннадий</p>
+							<p>+79165093234</p>
+						</div>
+						<p class="global_title_h2 sub_text_mob">Выберите адрес:</p>
+						<div class="sub_scroll">
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Рабочий 2</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Домашний</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+							<li class="sub_info">
+								<p class="sub_info__name">Дополнительный</p>
+								<p class="sub_info__addr">г. Москва, ул.Авиамоторная, дом 10б, 3 подъезд, кв 234, домофон 3234</p>
+							</li>
+						</div>
+					</ul>
+					<!-- END sub_list -->
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">ПУСТОЙ</p>
+						<p class="main_info__tel">+79165093234</p>
+					</div>
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">ПУСТОЙ</p>
+						<p class="main_info__tel">+79165093234</p>
+					</div>
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">ПУСТОЙ</p>
+						<p class="main_info__tel">+79165093234</p>
+					</div>
+				</li>
+				<li class="main_info">
+					<div class="main_info_text">
+						<p class="main_info__name">ПУСТОЙ</p>
+						<p class="main_info__tel">+79165093234</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- END POP UP -->
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<!-- datepicker -->
+<script src="libs/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="libs/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+<!-- END datepicker -->
+<script src="libs/slick-1.6.0/slick/slick.min.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="js/common.js"></script>
+<script src="libs/jquery.pixlayout.0.9.7.js"></script>
+<!--  nicescroll  -->
+<script src="libs/jquery.nicescroll.min.js"></script>
+<!--  END nicescroll  -->
+<script type="text/javascript">
+	$(function(){
+//		$.pixlayout({clip: true, src: "index_1440.jpg", show:true, center:true, top:0, left:0, pervious: false});
+}); 
+</script>
+<script>
+	$(function(){
+	
+	   $(".tabs-menu label").click(function(event) {
+        event.preventDefault();
+        $(this).addClass("current");
+        $(this).siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $(".taber-cont").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
+
+     $('.plus').on('click',function(){
+        var $qty=$(this).closest('.slider-amount').find('.amount');
+        var currentVal = parseInt($qty.val());
+        if (!isNaN(currentVal)) {
+            $qty.val(currentVal + 1);
+        }
+    });
+    $('.minus').on('click',function(){
+        var $qty=$(this).closest('.slider-amount').find('.amount');
+        var currentVal = parseInt($qty.val());
+        if (!isNaN(currentVal) && currentVal > 0) {
+            $qty.val(currentVal - 1);
+        }
+    });
+	});
+	
+	
+	$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+	});	
+
+$('.w640').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+	});
+
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  draggable: false,
+  asNavFor: '.slider-for',
+  arrows: false,
+  centerMode: false,
+  focusOnSelect: true,
+  centerPadding: '8px',
+  variableWidth: true
+	});
+
+
+</script>
+
+</body>
+</html>

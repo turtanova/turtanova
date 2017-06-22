@@ -1,0 +1,73 @@
+@media screen and (max-width: 1100px) {
+	div.footer-top__info { margin-right: 30px; }
+	div.footer-top__logo { max-width: 360px; }
+}
+@media screen and (max-width: 990px) {
+ 	div .header {
+ 		padding: 20px 0;
+	  	.header-top__logo {
+		  	float: none;
+		  	margin: 0 auto;
+		  	max-width: 360px;
+		} 
+		.header__nav {
+			float: none;
+			text-align: center;
+			width: 100%;
+		}
+	}
+	div.footer-top { text-align: center;}
+	div.footer-top__info,
+	div.footer-top__phone {
+		display: inline-block;
+	}
+	div.footer-top__logo {display: block; margin: 0 auto;}
+}
+
+@media screen and (max-width: 790px) {
+	.header__nav {
+		ul { display: none; margin-top: 20px; }
+		ul li {
+			display: block;
+			text-align: left;
+			a:hover {
+				background: none;
+				color: $color-brown;
+			}
+		}
+		.toggle-menu {
+			display: block;
+			position: relative;
+		}
+	}
+	div .slider-item__text { left: 40px; }
+}
+@media screen and (max-width: 600px) {
+	.header { text-align: center; }
+	.header-top__phone,
+	.header-top__info {
+		float: none;
+		display: inline-block;
+		width: 100%;
+	}
+	.toggle-menu { margin: 0 auto; }
+	div .header-top__info {padding-top: 20px; }
+	div .slider-item__title { font-size: 3rem; }
+	div .slider-wrap .bx-wrapper .bx-next,
+	div .slider-wrap .bx-wrapper .bx-prev { display: none; }
+	div .slider__pager {display: block; }
+	div .article__img,
+	div .article__text {float: none; max-width: 100%; display: inline-block; text-align: justify;}
+	div .article__img { margin-bottom: 20px;}
+	div .large__title {max-width: 80%; }
+	div.footer-top__info,
+	div.footer-top__phone { 
+		margin-top: 20px;
+		width: 100%; 
+	}
+}
+@media screen and (min-width: 790px) {
+	.header__nav {
+		ul { display: block !important; }
+	}
+}

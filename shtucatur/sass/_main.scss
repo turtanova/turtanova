@@ -1,0 +1,49 @@
+$color-text: #4c4f49;
+$color-orange: #f35f1a;
+$color-black: #3d3d3d;
+$color-green: #01c041;
+$color-red: #fa140e;
+$color-white: #fff;
+
+$font-roboto_CR: 'Roboto Condensed Regular';
+$font-roboto_CB: 'Roboto Condensed Bold';
+$font-bebas_NR: 'Bebas Neue Regular';
+$font-bebas_NB: 'Bebas Neue Bold';
+
+html {
+	font-size: 16px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	color: $color-white;
+}
+a, a:hover {
+	text-decoration: none;
+}
+a, tr {
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+a:hover, 
+a:active {
+	color: $color-orange;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+input[type="submit"],
+button {
+	cursor: pointer;
+}

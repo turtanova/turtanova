@@ -1,0 +1,361 @@
+@import 'reset'
+@import 'basic'
+
+header
+	background: url(../img/c2.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	min-height: 641px;
+	padding-bottom: 40px
+	position: relative
+	//background-attachment: fixed
+
+.logo 
+	font: 40px "RobotoRegular"
+	margin-top: 40px
+	a
+		text-decoration: none;
+		i 
+			color: #80FFFF
+
+header .head-phone
+	text-align: right
+	margin-top: 30px 
+	font-family: "RobotoRegular"
+.ftr-tabs
+	margin: 30px 0 50px 0
+	font-family: "RobotoRegular"
+	color: $red-color
+
+
+.head-phone .tabs, .ftr-tabs .tabs
+	margin-bottom: 15px
+	span 
+		cursor: pointer
+		text-transform: uppercase
+		font-size: 18px
+
+.head-phone .active , .ftr-tabs .active
+	text-decoration: underline
+
+.tab-item, .tab-item-4
+	display: none
+	font-weight: bold
+	font-size: 30px
+.tab-item2 , .tab-item-4, .tab-item3
+	display: none
+
+.tab-item:first-child, .tab-item2:first-child , .tab-item3:first-child, .tab-item-4:first-child 
+	display: block
+
+.header-cont
+	h2 
+		font-size: 42px
+
+.head-cont_tabs
+	font: 18px "RobotoBold"
+	text-transform: uppercase
+	color: #000
+	text-align: left
+	padding-top: 40px
+	max-width: 640px
+	float: right
+
+	.tab2 
+		float: left
+		padding: 18px 20px
+		display: block
+		cursor: pointer
+		color: #fff
+		background: rgba(255,255,255, 0.4)
+		transition: 0.5s 
+
+	.tab-content
+		padding: 25px 30px 15px 15px	
+		background: rgba(255,255,255,0.6)
+
+	& .active
+		background: rgba(255,255,255,0.6)
+		color: #000
+
+	li
+		padding: 0 0 14px 60px
+		position: relative
+		line-height: 20px
+	i
+		position: absolute
+		top: 0
+		left: 20px
+		font-size: 25px
+		color: #777
+
+	li:first-child i
+		top: 8px
+	.tab-button 
+		text-align: right
+ 
+a.button, .button
+	display: inline-block
+	height: 46px
+	padding: 0 32px
+	line-height: 46px
+	text-align: center
+	text-transform: uppercase
+	color: #fff
+	text-decoration: none;
+	border-radius: 3px
+	&.btn-red
+		background: $red-color
+		&:hover
+			background: #ba3f3f
+		&:active
+			background: #890303
+
+	&.btn-green
+		background: $green-color
+		&:hover
+			background: #86f577
+		&:active
+			background: #239314
+
+	&.btn-white
+			background: #fff
+			color: #000
+			&:hover
+				background: #ccc
+			&:active
+				background: #777
+
+.trigers 
+	background: linear-gradient(#E882C9, #fff)
+	color: $red-color
+	font-family: "RobotoRegular"
+	text-transform: uppercase
+.tr-ch 
+	padding-left: 30px
+.tr-box
+	position: relative
+	padding: 60px 0 30px 60px
+	line-height: 16px
+	span
+		font-size: 12px
+
+	strong
+		font-size: 16px
+		font-weight: normal
+		display: block
+	i
+		font-size: 60px	
+		position: absolute
+		left: 0
+		top: 40px
+		color: $red-color
+	
+
+.profi 
+	background: #fff
+	padding: 60px 0 65px 0
+	h2 
+		text-align: center
+		font-size: 50px
+
+.pf-item
+	margin-bottom: 20px
+
+.it-circle, .it-text
+	display: inline-block
+	vertical-align: middle
+
+.it-text
+	max-width: 550px;
+	padding-left: 20px
+	h3
+		color: $red-color
+		font: 24px "RobotoRegular"
+		font-weight: bold
+		line-height: 50px
+	p 
+		color: $text-color
+		font: 14px "RobotoRegular"
+		line-height: 20px
+		b
+			color: #000
+
+.it-circle
+
+	i
+		color: $red-color
+		font-size: 50px
+
+.pf-form 
+	height: auto
+	border: 4px solid $green-color
+	border-radius: 3px
+	padding: 30px 0 35px 0
+	background: #f7f7f7
+	color: #555
+	font-family: "CleanvertisingLight"
+	form 
+		display: block
+		width: 94%
+		margin: 0 auto
+	h3
+		text-align: center
+		font-size: 22px
+		text-transform: uppercase
+		margin-bottom: 15px
+	input, select
+		min-width: 100%
+		height: 44px
+		text-indent: 15px
+		border: 1px solid #ccc
+		border-radius: 3px
+		color: #777
+		position: relative
+		&:focus
+			border: 2px solid $green-color
+	label
+		font-size: 12px
+		padding-left: 5px
+		color: #777
+	p 
+		margin: 0 0 5px 0
+
+	.btn-center 
+		text-align: center
+		margin-top: 30px
+		
+.bg-slider 
+	min-height: 618px
+	background: #402420 url(../img/lux3.jpg) 50% 50% repeat-y
+	background-size: cover
+	background-attachment: fixed
+	color: #fff
+	text-align: center
+	font-family: "CleanvertisingLight"
+	h2
+		text-align: center
+		color: #fff
+		padding: 60px 0 40px 0
+		font-size: 50px
+	h4
+		font: italic 22px "Times New Roman"
+		margin-bottom: 18px
+		&:after
+			content: ""
+			position: relative
+			top: 18px
+			display: block
+			margin: 0 auto
+			width: 82px
+			height: 2px
+			background: #fff
+	p 
+		padding: 22px 0 20px 0
+		line-height: 26px
+		font-size: 15px
+
+.slider .item-s
+	max-width: 640px
+	margin: 0 auto
+
+.slider .item-s .slid-img img 
+	display: inline-block
+	text-align: center
+	max-width: 180px
+	max-height: 180px
+	border-radius: 50%
+	border: 8px solid rgba(255,255,255, 0.2)
+	margin-bottom: 30px;
+
+.owl-nav
+	div
+		position: absolute
+		top: 20px
+		opacity: 0.5
+		width: 45px
+		height: 140px
+		background: url(../img/arrow-s.png) no-repeat
+		&:hover
+			opacity: 1
+
+	.owl-prev
+		left: 0
+		background-position: 0 0 
+	.owl-next
+		right: 0
+		background-position: 100% 0 
+
+.bg-red
+	min-height: 235px
+	text-align: center
+	background: #8A1619 url(../img/ggg.jpg)50% 50% repeat-x
+	padding: 30px 0
+	background-size: cover
+	h3
+		color: #fff
+		font: 20px "RobotoRegular"
+		text-transform: uppercase
+		padding: 14px 0
+		background: rgba(255,255,255, 0.13)
+		margin-bottom: 24px
+ 
+.top-geo
+	background: #fff
+	padding: 50px 0 30px 0
+	text-align: center
+	h2
+		color: #000
+		font: 50px "CleanvertisingLight"
+
+	
+.text-geo, .tab-geo
+	display: inline-block
+	vertical-align: middle
+
+.tab-geo 
+	margin-left: 30px
+	.tab-item3 
+		font: 16px "RobotoRegular"
+	.tabs
+		color: $red-color
+		font: 16px "RobotoBold"
+		margin-bottom: 30px
+		.tab3 
+			float: left
+			display: block
+			height: 50px
+			line-height: 40px
+			width: 210px
+			cursor: pointer
+			background: #fff
+			border: 6px solid $red-color
+			&:last-child
+				border-radius: 0 3px 3px 0
+			&:first-child
+				border-radius: 3px 0 0 3px
+			&.active 
+				background: $red-color
+				color: #fff
+
+.map 
+	min-height: 480px
+	margin-top: 20px
+
+footer
+	background: #fff
+	text-align: center
+	padding: 50px 0
+	h3
+		color: #000
+		font: 50px "CleanvertisingLight"
+	p 
+		color: #000
+		font: 18px "RobotoRegular"
+		margin: 30px 0 60px 0
+
+.hidden-f
+	display: none
+#hidden-f
+	max-width: 360px
+	margin: 0 auto
+	position: relative

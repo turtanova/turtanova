@@ -1,0 +1,48 @@
+$color-text: #707070;
+$color-green: #008B8B;
+$color-black: #131a1d;
+$color-red: #fa140e;
+$color-white: #fff;
+$color-gray: #515151;
+
+
+html {
+	font-size: 1rem/16px;
+	font-family: 'Oswald', Arial, sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: $color-white;
+}
+a, a:hover {
+	text-decoration: none;
+}
+a, tr {
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+a:hover, 
+a:active {
+	color: $color-green;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+input[type="submit"],
+button {
+	cursor: pointer;
+}

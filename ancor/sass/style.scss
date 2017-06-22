@@ -1,0 +1,650 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset", "mix", "main", "media";
+
+body {
+	font: normal 16px Tahoma, Arial, sans-serif;
+	color: $color-text;
+	height: 100%;
+	background: $color-body;
+	line-height: 1.4rem;
+}
+
+.bg-cover, 
+.footer-cover {
+	background: url('../img/bg-body.jpg') 0 50% no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	min-width: 320px;
+}
+.row {
+	padding: 0 30px;
+}
+.header {
+	padding: 40px 0;
+	background: $color-gray;
+	min-height: 200px;
+}
+.header-top {
+	margin-bottom: 20px;
+}
+.header-top__logo {
+	float: left;
+	max-width: 412px;
+	width: 100%;
+	margin-right: 30px;
+}
+.header-top__info {
+	float: left;
+	padding-top: 30px;
+}
+.header-top__phone {
+	float: right;
+}
+.header-top__address {
+	color: $color-brown;
+}
+.header-top__phone {
+	padding-top: 10px;
+	a {
+		color: $color-brown;
+		font-size: 1.125rem; //18px
+		display: inline-block;
+		margin-bottom: 15px;
+		&:hover {
+			color: $color-black;
+		}
+	}
+}
+.phone__large {
+	font-size: 30px; //for all browsers that do not support rem + IE-8
+	font-size: 1.875rem; //30px
+}
+.header__nav {
+	float: right;
+	position: relative;
+	ul {
+		border-top: 2px solid $color-blue;
+		border-bottom: 2px solid $color-blue;
+	}
+	li {
+		display: inline-block;
+	}
+	li a {
+		display: block;
+		text-transform: uppercase;
+		padding: 8px 10px;
+		&:hover, &.active {
+			background: $color-brown;
+		}
+	}
+}
+.toggle-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	padding: 4px;
+	text-align: center; 
+	display: none;
+	cursor: pointer;
+	&:hover, &.active {
+		span { background: $color-brown; }
+	}
+	span {
+	    background: rgb(63, 63, 63);
+	    display: block;
+	    width: 80%;
+	    height: 4px;
+	    margin: 6px;
+	}
+}
+.header-bottom__button {
+	float: right;
+}
+.slider {
+	height: 100%;
+}
+.slider-wrap {
+	width: 100%;
+	position: relative;
+	.bx-wrapper .bx-viewport {
+		border: none;
+		left: 0;
+		box-shadow: none;
+		height: 444px;
+		background: #eee;
+	}
+	.bx-wrapper { margin: 0 auto; }
+	.bx-wrapper .bx-loading {
+    	background: url(images/bx_loader.gif) center center no-repeat;
+	}
+	.bx-wrapper .bx-prev {
+		left: 50px;
+	}
+	.bx-wrapper .bx-next {
+		right: 50px;
+	}
+	.bx-wrapper .bx-next, 
+	.bx-wrapper .bx-prev {
+		background: none;
+		background: $color-blue;
+		&:hover { background: $color-brown; }
+		width: 50px;
+		height: 50px;
+		@include border-radius(50%);
+		border: 2px solid $color-white;
+		text-indent: 0;
+		color: #fff;
+		font-size: 30px;
+		line-height: 44px;
+		text-align: center;
+	}
+}
+.slider-item {
+	height: 100%;
+}
+.slider-item__img {
+	width: 100%;
+	height: 444px;
+}
+.slide-img {
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.slide-1 {
+	background: url('../img/slide.jpg') 20% 50% no-repeat;
+}
+.slide-2 {
+	background: url('../img/bg-body.jpg') 20% 50% no-repeat;
+}
+.slider-item__text {
+	position: absolute;
+	top: 40px;
+	left: 200px;
+	line-height: 40px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: -8px;
+		left: -20px;
+		height: 80px;
+		width: 10px;
+		background: $color-blue;
+	}
+	span { display: block; }
+}
+.slider-item__title {
+	font-size: 50px; //for IE-8
+	font-size: 3.5rem; //56px
+	color: $color-blue;
+	text-transform: uppercase;
+}
+.slider-item__descr {
+	font-size: 30px; //for all browsers that do not support rem + IE-8
+	font-size: 1.875rem; //30px
+	color: $color-white;
+}
+
+// --------- Custom pager
+
+.slider__pager {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+  display: none;
+}
+.slider__pager a {
+  height: 20px;
+  width: 40px;
+  display: inline-block;
+  background: $color-blue;
+  margin-right: 10px;
+ @include box-shadow(0 0 5px #000, inset 0 0 5px #000);
+ border: 1px solid #000;
+}
+.slider__pager a:last-child {
+  margin-right: 0;
+}
+.slider__pager a.active {
+  background: $color-brown;
+}
+/*--------------- Content  ----------------*/
+.content {
+	background: #fff;
+}
+.main {
+	min-height: calc(100vh - 444px); // прижать футер к низу страницы!
+	background: #fff;
+	padding-bottom: 40px;
+}
+.block1 {
+	
+}
+.block2 {
+	width: 700px;
+	height: 50px;
+	margin: 0 auto;
+	background: green;
+	
+}
+
+.large-wrap {
+	text-align: center;
+	margin-bottom: 50px;
+	padding-top: 40px;
+}
+.large__line {
+	width: 100%;
+	height: 4px;
+	background: $color-brown;
+	margin: 40px 0;
+}
+.large__title {
+	max-width: 56%;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    @include border-radius(20px);
+    @include box-shadow(5px 0 7px rgba(0,0,0,0.2), -5px 0 7px rgba(0,0,0,0.2));
+    margin-top: -70px;
+    padding: 14px 0;
+    background: #fff;
+   	border: 1px solid #777;
+	color: $color-brown;
+	font-size: 24px;
+	font: 1.5rem 'Open Sans Condensed', sans-serif;
+}
+.article-wrap {
+	padding: 0 30px;
+}
+.article {
+	overflow: hidden; //for IE-7, does not understand - clearfix :-/
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #777;
+	&:last-child {
+		padding-bottom: 0;
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+}
+.article__img {
+	max-width: 24%;
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+	overflow: hidden;
+	img { 
+		-webkit-transition: 0.5s ease; 
+		-moz-transition: 0.5s ease; 
+		-o-transition: 0.5s ease; 
+		transition: 0.5s ease; 
+	}
+	&:hover {
+		img {
+			-webkit-transform: scale(1.4);
+			-moz-transform: scale(1.4);
+			-o-transform: scale(1.4);
+			transform: scale(1.4);
+		}
+	}
+}
+.article__text {
+	float: right;
+	max-width: 73%;
+	font-size: 1.25rem;
+	p { padding-bottom: 30px; text-indent: 20px;}
+	p:last-child { padding-bottom: 0; }
+}
+.base__title {
+	margin: 0 0 30px 20px;
+	position: relative;
+	font-size: 30px; //for all browsers that do not support rem + IE-8
+	font: 1.875rem 'Open Sans Condensed', sans-serif; // 30px
+	text-transform: uppercase;
+	color: $color-darck_blue;
+	line-height: 2rem;
+	&:after {
+		content: "";
+		position: absolute;
+		width: 10px;
+		height: 54px;
+		background: $color-brown;
+		top: 0;
+		left: -15px;
+	}
+	h2 {
+		display: inline; // for older browsers |\|
+		border-bottom: 2px solid $color-brown;
+	}
+}
+
+// Footer -----------------//
+
+.footer {
+	min-height: 444px;
+	background: #333 url('../img/slide.jpg') 20% 50% no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+.footer-top {
+	background: #000; //for IE-8
+	background: rgba(0,0,0,0.7);
+	min-height: 110px;
+	padding:14px 0;
+	color: $color-white;
+}
+
+.footer-top__logo {
+	display: inline-block;
+	max-width: 412px;
+	width: 100%;
+}
+.footer-top__info {
+	float: left;
+	margin-right: 80px;
+	margin-top: 25px;
+}
+.footer-top__phone {
+	float: right;
+	a {
+		color: $color-white;
+	}
+	.phone__large {
+		font-weight: bold;
+	}
+	.order-button {
+		color: $color-white;
+		text-transform: uppercase;
+		font-size: 1.125rem; //18px
+		display: inline-block;
+		border: 1px solid $color-white;
+		font-style: italic;
+		padding: 7px 35px;
+		margin-top: 6px;
+		@include border-radius(20px);
+		&:hover { background: $color-white; color: $color-black; }
+		&:active { @include box-shadow( 0 0 5px 10px rgba(255,255,255,.5));}
+	}
+}
+.footer-bottom {
+	background: #000; //for IE-8
+	background: rgba(0,0,0,0.7);
+	min-height: 110px;
+	width: 100%;
+	padding-top:14px;
+	color: $color-white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-top: 12px;
+	text-align: center;
+}
+.footer-social {
+	padding-bottom: 12px;
+	margin-bottom: 10px;
+	display: inline-block;
+	max-width: 700px;
+	width: 100%;
+	border-bottom: 2px solid $color-white;
+	a {
+		width: 42px;
+		height: 42px;
+		position: relative;
+		display: inline-block;
+		background: url('../img/icons.png') 0 0 no-repeat;
+		&:hover { 
+			-webkit-transform: translateY(-5px);
+			-moz-transform: translateY(-5px);
+			transform: translateY(-5px);
+		}
+	}
+	// Можно оформить через nth-of-type, но в IE-8 does not work :-\
+	a.google {
+		background-position: 0 0;
+	}
+	a.twitter {
+		background-position: -44px 0;
+	}
+	a.mail {
+		background-position: -88px 0;
+	}
+	a.facebook {
+		background-position: -132px 0;
+	}
+	a.rss {
+		background-position: -176px 0;
+	}
+}
+
+// Стилизация полосы прокрутки страницы
+
+::-webkit-scrollbar-track {
+	background: $color-white;
+	@include box-shadow(inset 0 0 12px #000);
+}
+
+::-webkit-scrollbar-thumb {
+	@include border-radius(20px);
+ 	background: $color-black;
+ 	@include box-shadow(0 0 4px #000);
+}
+
+::-webkit-scrollbar {
+	width: 18px;
+}
+
+// POP UP ------------------------------  //
+
+.modal {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3000;
+	display: none;
+}
+
+.modal__dialog {
+	max-width: 400px;
+	width: 100%;
+	padding: 30px;
+	background: $color-white;
+	margin: 100px auto;
+	text-align: center;
+	position: relative;
+	animation: zoom 1s linear;
+}
+@-webkit-keyframes zoom {
+	from {
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@-moz-keyframes zoom {
+	from {
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@keyframes zoom {
+	from {
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		transform: scale(1);
+	}
+}
+.modal__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: $color-black;
+	background: $color-brown;
+	font-size: 24px;
+	padding: 10px;
+	cursor: pointer;
+	&:hover { background: #D7C0A6; }
+}
+.modal__content {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	.name,
+	.tel {
+		width: 100%;
+		margin: 10px 0;
+		height: 40px;
+		padding: 0 15px;
+	}
+	.button-submit {
+		width: 100%;
+		height: 40px;
+		border: none;
+		background: $color-brown;
+		margin-top: 20px;
+		text-transform: uppercase;
+		cursor: pointer;
+		font-size: inherit;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		transition: 0.5s;
+		&:hover { background: #D7C0A6; }
+	}
+}
+.modal__header {
+	margin-bottom: 20px;
+	color: $color-black;
+	text-transform: uppercase;
+	border-bottom: 2px solid $color-brown;
+	padding-bottom: 10px;
+}
+
+// Раздел продукция 
+.product-item {
+	padding-bottom: 20px;
+	border-bottom: 2px solid $color-gray;
+	margin-bottom: 50px;
+	&:last-child {
+		margin-bottom: 0;
+		border-bottom: 0;
+	}
+}
+.product__img {
+	max-width: 28%;
+	text-align: center;
+	float: left;
+}
+.product__pic { margin-bottom: 10px; }
+.product__price {
+	font-size: 1.875rem; // 30px
+	color: $color-darck_blue;
+	b { color: $color-black; }
+}
+.product__info {
+	float: right;
+	width: 70%;
+}
+.product__title {
+	font-size: 1.875rem; // 30px
+	color: $color-darck_blue;
+	margin-bottom: 50px;
+	line-height: 2rem;
+}
+.product__descr {
+	font-size: 1.25rem; // 20px
+	line-height: 1.6rem;
+}
+.product__more {
+	text-align: right;
+	margin-top: 10px;
+}
+.more-button {
+	display: inline-block;
+	padding: 10px 25px;
+	border: 1px solid $color-darck_blue;
+	@include border-radius(30px);
+	font-style: italic;
+	color: $color-darck_blue;
+	font-size: 1.125rem; // 18px
+	&:hover {
+		color: $color-white;
+		background: $color-darck_blue;
+	}
+}
+.pagination {
+	text-align: center;
+	margin: 20px 0 30px 0;
+}
+.pagination-list {
+	display: inline-block;
+	li  {
+		display: inline-block;
+	}
+	li + li { margin-left: 4px; }
+	li a {
+		display: table-cell;
+		width: 38px;
+		height: 38px;
+		border: 1px solid $color-darck_blue;
+		color: $color-black;
+		font-size: 1.5rem; // 24px
+		vertical-align: middle;
+		@include border-radius(50%);
+
+		&:hover, &.active {
+			background: $color-darck_blue;
+			color: $color-white;
+		}
+	}
+}
+li a.pagination__next,
+li a.pagination__prev {
+	color: $color-darck_blue;
+	border: none;
+	&:hover { 
+		background: none; 
+		color: $color-darck_blue;
+	}
+}
