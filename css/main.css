@@ -430,6 +430,9 @@ h2:before {
 
 .about-info .img img {
 	height: 100%;
+	position: relative;
+    	top: 0;
+    	right: 40%;
 }
 
 .about-info_text {
